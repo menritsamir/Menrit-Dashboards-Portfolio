@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menrit Dashboards Portfolio</title>
+    <style>
+        :root {
+            --bg-color: #f4f6f9;
+            --card-bg: #ffffff;
+            --text-color: #333333;
+            --primary-color: #118d95; /* Power BI Teal accent */
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        header h1 {
+            margin: 0 0 10px 0;
+            font-size: 2.5rem;
+        }
+        .project-section {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        .project-section h2 {
+            margin-top: 0;
+            border-bottom: 2px solid #eef2f5;
+            padding-bottom: 10px;
+            color: #2c3e50;
+        }
+        .project-meta {
+            font-size: 0.95rem;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        /* Responsive Embed Containers */
+        .iframe-container {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            padding-top: 56.25%; /* 16:9 Aspect Ratio */
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+        }
+        .iframe-container iframe {
+            position: absolute;
+            top: 0; left: 0; bottom: 0; right: 0;
+            width: 100%; height: 100%;
+            border: none;
+        }
+        /* Layout for Superset Masked Images */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .gallery-item img {
+            width: 100%;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+            transition: transform 0.2s;
+        }
+        .gallery-item img:hover {
+            transform: scale(1.02);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Menrit Dashboards Portfolio</h1>
+        <p>A showcase of interactive and enterprise business intelligence solutions.</p>
+    </header>
+
+    <!-- 1. POWER BI SECTION -->
+    <div class="project-section">
+        <h2>Interactive Kaggle Data Analysis</h2>
+        <p class="project-meta"><strong>Tool:</strong> Power BI | <strong>Dataset:</strong> Public Kaggle Data</p>
+        <p>This interactive dashboard explores key patterns within the Kaggle dataset. Filter data dynamically using the visuals below.</p>
+        <div class="iframe-container">
+            <!-- REPLACE THE SRC LINK BELOW WITH YOUR GENERATED POWER BI EMBED LINK -->
+            <iframe title="Power BI Dashboard" src="YOUR_POWER_BI_PUBLIC_EMBED_URL_HERE&navContentPaneEnabled=false" allowFullScreen="true"></iframe>
+        </div>
+    </div>
+
+    <!-- 2. TABLEAU SECTION -->
+    <div class="project-section">
+        <h2>Advanced Visual Insights</h2>
+        <p class="project-meta"><strong>Tool:</strong> Tableau Public</p>
+        <p>A deep dive tracking operational metrics and geo-spatial data mapping natively within Tableau.</p>
+        <div class="iframe-container">
+            <!-- REPLACE THE SRC LINK BELOW WITH YOUR TABLEAU EMBED EMBED LINK OR PASTE ENTIRE TABLEAU EMBED CODE HERE -->
+            <iframe title="Tableau Dashboard" src="https://public.tableau.com/views/E-Commerce_Menrit/ReviewsStory?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" allowFullScreen="true"></iframe>
+        </div>
+    </div>
+
+    <!-- 3. APACHE SUPERSET SECTION -->
+    <div class="project-section">
+        <h2>Enterprise Metrics & Log Infrastructure</h2>
+        <p class="project-meta"><strong>Tool:</strong> Apache Superset | <strong>Environment:</strong> Secure Internal Server</p>
+        <p>Designed for real-time relational database exploration. Sensitive infrastructure data, IP blocks, and customer records have been strictly masked for public demonstration.</p>
+        
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <!-- If you uploaded 'superset1.png' to your images folder, this path will pull it perfectly -->
+                <img src="images/Business Dashboard Rev and Trx.png" alt="Business Dashboard Rev and Trx">
+                <img src="images/CPs and Tones Statistics.png" alt="Business Dashboard CPs and Tones statistics">
+                <img src="images/Occasions & Seasonality YoY Dashboard.png" alt="Occasions YoY Business KPIs">
+                <img src="images/System Monitoring Dashboard.png" alt="Occasions YoY System Monitoring KPIs">
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+
